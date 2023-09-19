@@ -56,4 +56,14 @@ const onBtnClick = () => {
   setAns(matchCounter);
 };
 
+const onKeyDown = (e) => {
+  if (e.code === "Enter") {
+    onBtnClick();
+  }
+};
+
 btn.addEventListener("click", onBtnClick);
+document.addEventListener("keydown", onKeyDown);
+document.addEventListener("keypress", (e) => {
+  input.focus();
+});
