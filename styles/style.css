@@ -49,9 +49,9 @@ html,body {
 
 
 .cell:nth-child(1) {
-    height: 100px;
-    padding-top: 45px;
-    padding-bottom: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     color: white;
 
